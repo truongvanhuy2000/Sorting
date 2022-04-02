@@ -65,20 +65,20 @@ class InsertionSorting
 class MergeSorting
 {
     public:
-    // void MergeSort(vector<int>& array, int left, int middle, int right)
-    // {
+    void MergeSort(vector<int>& array, int left, int middle, int right)
+    {
 
-    // }
-    // void divideArr(vector<int>& array, int left, int right)
-    // {
-    //     if(left < right)
-    //     {
-    //         int i_middle_point= left + (right - left)/2;
-    //         divideArr(array, left, i_middle_point);
-    //         divideArr(array, i_middle_point + 1, right);
+    }
+    void divideArr(vector<int>& array, int left, int right)
+    {
+        if(left < right)
+        {
+            int i_middle_point= left + (right - left)/2;
+            divideArr(array, left, i_middle_point);
+            divideArr(array, i_middle_point + 1, right);
             
-    //     }
-    // }   
+        }
+    }   
 };
 class Sorting: public BubbleSorting, SelectionSorting, InsertionSorting
 {};
